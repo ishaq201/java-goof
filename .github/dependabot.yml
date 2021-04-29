@@ -1,0 +1,14 @@
+version: 2
+updates:
+- package-ecosystem: maven
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: org.hibernate:hibernate-validator
+    versions:
+    - 5.3.6.Final
+  - dependency-name: org.hsqldb:hsqldb
+    versions:
+    - 2.5.1
